@@ -26,7 +26,7 @@
 							<div class="inner">
 								<h1>Bolu Arowolo</h1>
 							<h2>Welcome to my portfolio</h2>
-							<p>C++ // C# // JavaScript // Python // SQL // React.js // HTML // Game programming // AI Optimization // VFX // UI development // VR/AR Development // Web Development // Software Engeneering // UnrealEngine 5 // Unity // Blender // Photoshop</p>
+							<P id="typewriter"></p>
 							</div>
 						</div>
 						<nav>
@@ -412,6 +412,24 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+			const text = "C++ // C# // JavaScript // Python // SQL // React.js // HTML // Game programming // AI Optimization // VFX // UI development // VR/AR Development // Web Development // Software Engineering // UnrealEngine 5 // Unity // Blender // Photoshop";
+			const target = document.getElementById("typewriter");
+			let index = 0;
+			function type()
+	{
+			if (index < text.length)
+	 {
+			target.innerHTML += text.charAt(index);
+      index++;
+      setTimeout(type, 50); // Typing speed in ms
+	 }
+  }
+
+  window.addEventListener("load", type);
+</script>
+
 
 	</body>
 </html>
