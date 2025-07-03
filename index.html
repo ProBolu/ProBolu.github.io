@@ -54,79 +54,110 @@
 		</article>
 
 	<!-- Projects -->
-<article id="work">
-  <h2 class="major">Projects</h2>
+	<article id="work">
+	  <h2 class="major">Projects</h2>
 
-  <div class="project">
-    <span class="video main">
-      <iframe
-        width="350"
-        height="225"
-        src="https://www.youtube.com/embed/l8fDw_BxGxE"
-        title="The City Below Showcase"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </span>
-    <p><strong>The City Below // Unreal Engine</strong></p>
-    <p>I worked on this project as a <strong>Senior Gameplay Programmer</strong>, collaborating with the technical team to develop scalable gameplay systems and features.</p>
-    <ul>
-      <li><strong>AI Systems:</strong> Designed and implemented enemy behaviors using EQS, enabling dynamic decisions such as dodging, attacking, throwing grenades, strafing, and detecting the player to create dynamic combat scenarios.</li>
-      <li><strong>Grenade System:</strong> Developed a modular grenade system used by both players and AI, supporting visual effects, radial damage, and object pooling for performance.</li>
-      <li><strong>VFX & Materials:</strong> Created custom visual effects and shaders, made textures in Photoshop, and implemented them into Unreal Engine to improve gameplay feedback, they can be seen <a href="https://www.youtube.com/playlist?list=PLnTaCbfqoynL3hl6LKer8-LvDxlI2QMeu" target="_blank">here</a>.</li>
-      <li><strong>Game Settings:</strong> Built flexible settings for graphics, controls, display, and volume, with designer-friendly workflows for adding new options.</li>
-      <li><strong>Gameplay Systems:</strong> Developed gameplay mechanics such as grenade usage caps, frag effects with UI integration, and exposed editable VFX systems for designers to tweak without coding changes.</li>
-    </ul>
-    <p>The game can be viewed and downloaded <a href="https://amiknowntou.itch.io/the-city-below" target="_blank">here</a>.</p>
-  </div>
+	  <style>
+	    .toggle-project {
+	      cursor: pointer;
+	      font-weight: bold;
+	      padding: 1rem;
+	      background-color: #1e1e1e;
+	      border: 1px solid #444;
+	      margin-bottom: 0.2rem;
+	      border-radius: 6px;
+	      transition: background-color 0.3s;
+	    }
 
-  <div class="project">
-    <span class="video main">
-      <iframe
-        width="350"
-        height="225"
-        src="https://www.youtube.com/embed/EvHMxSZq-XE"
-        title="When Pigs Fly Game Showcase"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </span>
-    <p><strong>When Pigs Fly // Unreal Engine</strong></p>
-    <p>I worked with the technical team as a <strong>Junior Programmer</strong>, contributing primarily to UI development. I created functional Main Menu and Game Over screens, including button navigation for usability. I also:</p>
-    <ul>
-      <li>Developed Game Settings including adjustable sensitivity, display resolution, and volume for multiple audio categories.</li>
-      <li>Implemented a Save Game system to retain player preferences across sessions.</li>
-    </ul>
-    <p>The game can be viewed and downloaded <a href="https://thepurist.itch.io/when-pigs-fly" target="_blank">here</a>.</p>
-  </div>
+	    .toggle-project:hover {
+	      background-color: #2a2a2a;
+	    }
 
-  <div class="project">
-    <span class="video main">
-      <video src="videos/Mario.mp4" class="video" controls style="width:350px; height:auto;"></video>
-    </span>
-    <p><strong>Mario // C++</strong></p>
-    <p>This is a 2D game made in Visual Studio using SDL written entirely in C++, focusing on fundamentals of object-oriented programming, rendering, and input handling.</p>
-  </div>
+	    .project-details {
+	      display: none;
+	      padding: 1rem;
+	      border: 1px solid #444;
+	      border-top: none;
+	      margin-bottom: 1.5rem;
+	      background-color: #2f2f2f;
+	      border-radius: 0 0 6px 6px;
+	    }
 
-  <div class="project">
-    <span class="image main"><img src="images/Blends.png" alt="" /></span>
-    <p><strong>Blender Projects</strong></p>
-    <p>I created these models to practice Blender techniques such as bevelling, basic mesh editing, sculpting, UV mapping, lighting setups, rendering, and simple animations. I used decals, material shaders, and texture painting to develop more realistic surface details.</p>
-  </div>
+	    .video {
+	      max-width: 100%;
+	      width: 500px;
+	      height: auto;
+	    }
+	  </style>
 
-  <style>
-    .video {
-      max-width: 100%;
-      width: 500px;
-      height: auto; /* Maintain aspect ratio */
-    }
-    .project {
-      margin-bottom: 3rem;
-    }
-  </style>
+		<!-- Project 1 -->
+<div class="project">
+	<h3 class="toggle-project">▶ The City Below // Unreal Engine</h3>
+	<div class="project-details">
+		<iframe
+			width="350"
+			height="225"
+			src="https://www.youtube.com/embed/l8fDw_BxGxE"
+			title="The City Below Showcase"
+			frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+			allowfullscreen></iframe>
+		<p><strong>The City Below // Unreal Engine</strong></p>
+		<p>I worked on this project as a <strong>Senior Gameplay Programmer</strong>, collaborating with the technical team to develop scalable gameplay systems and features.</p>
+		<ul>
+			<li><strong>AI Systems:</strong> Designed and implemented enemy behaviors using EQS, enabling dynamic decisions such as dodging, attacking, throwing grenades, strafing, and detecting the player to create dynamic combat scenarios.</li>
+			<li><strong>Grenade System:</strong> Developed a modular grenade system used by both players and AI, supporting visual effects, radial damage, and object pooling for performance.</li>
+			<li><strong>VFX & Materials:</strong> Created custom visual effects and shaders, made textures in Photoshop, and implemented them into Unreal Engine to improve gameplay feedback, they can be seen <a href="https://www.youtube.com/playlist?list=PLnTaCbfqoynL3hl6LKer8-LvDxlI2QMeu" target="_blank">here</a>.</li>
+			<li><strong>Game Settings:</strong> Built flexible settings for graphics, controls, display, and volume, with designer-friendly workflows for adding new options.</li>
+			<li><strong>Gameplay Systems:</strong> Developed gameplay mechanics such as grenade usage caps, frag effects with UI integration, and exposed editable VFX systems for designers to tweak without coding changes.</li>
+		</ul>
+		<p>The game can be viewed and downloaded <a href="https://amiknowntou.itch.io/the-city-below" target="_blank">here</a>.</p>
+	</div>
+</div>
+
+<!-- Project 2 -->
+<div class="project">
+	<h3 class="toggle-project">▶ When Pigs Fly // Unreal Engine</h3>
+	<div class="project-details">
+		<iframe
+			width="350"
+			height="225"
+			src="https://www.youtube.com/embed/EvHMxSZq-XE"
+			title="When Pigs Fly Game Showcase"
+			frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+			allowfullscreen></iframe>
+		<p><strong>When Pigs Fly // Unreal Engine</strong></p>
+		<p>I worked with the technical team as a <strong>Junior Programmer</strong>, contributing primarily to UI development. I created functional Main Menu and Game Over screens, including button navigation for usability. I also:</p>
+		<ul>
+			<li>Developed Game Settings including adjustable sensitivity, display resolution, and volume for multiple audio categories.</li>
+			<li>Implemented a Save Game system to retain player preferences across sessions.</li>
+		</ul>
+		<p>The game can be viewed and downloaded <a href="https://thepurist.itch.io/when-pigs-fly" target="_blank">here</a>.</p>
+	</div>
+</div>
+
+<!-- Project 3 -->
+<div class="project">
+	<h3 class="toggle-project">▶ Mario // C++</h3>
+	<div class="project-details">
+		<video src="videos/Mario.mp4" class="video" controls></video>
+		<p><strong>Mario // C++</strong></p>
+		<p>This is a 2D game made in Visual Studio using SDL written entirely in C++, focusing on fundamentals of object-oriented programming, rendering, and input handling.</p>
+	</div>
+</div>
+
+<!-- Project 4 -->
+<div class="project">
+	<h3 class="toggle-project">▶ Blender Projects</h3>
+	<div class="project-details">
+		<img src="images/Blends.png" alt="Blender Models" style="width:100%; max-width: 500px;" />
+		<p><strong>Blender Projects</strong></p>
+		<p>I created these models to practice Blender techniques such as bevelling, basic mesh editing, sculpting, UV mapping, lighting setups, rendering, and simple animations. I used decals, material shaders, and texture painting to develop more realistic surface details.</p>
+	</div>
+</div>
 </article>
+
 
 	<!-- Journey -->
 	<article id="Journey">
@@ -466,6 +497,28 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
   }
 
   window.addEventListener("load", type);
+</script>
+
+<script>
+  document.querySelectorAll('.toggle-project').forEach(title => {
+    title.addEventListener('click', () => {
+      const details = title.nextElementSibling;
+      const isOpen = details.style.display === 'block';
+      // Close all other open projects
+      document.querySelectorAll('.project-details').forEach(d => d.style.display = 'none');
+      document.querySelectorAll('.toggle-project').forEach(t => {
+        if (t !== title) t.textContent = '▶ ' + t.textContent.slice(2);
+      });
+
+      if (isOpen) {
+        details.style.display = 'none';
+        title.textContent = '▶ ' + title.textContent.slice(2);
+      } else {
+        details.style.display = 'block';
+        title.textContent = '▼ ' + title.textContent.slice(2);
+      }
+    });
+  });
 </script>
 
 
